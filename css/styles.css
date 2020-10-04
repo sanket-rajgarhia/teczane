@@ -1,0 +1,134 @@
+html, body, header, #intro {
+  height: 100%;
+  margin: 0;
+}
+
+/* Header Section CSS Styles */
+@media (min-width: 434px) {
+  .nb-expanded-bg-color {
+    background-color: #0a2850;
+  }
+}
+
+@media (min-width: 992px) {
+  .nb-expanded-bg-color {
+    background-color: unset;
+  }
+}
+
+#intro {
+  background: url("../images/header-fluid.png");
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.brand {
+  max-width: 200px;
+}
+
+.teczane-logo {
+  width: 30%;
+  height: auto;
+  /* background-color: #A6F6F1; */
+  /* background-color: #d9ecf2; */
+  /* background-color: #fecb89; */
+  /* border-radius: 25px 0; */
+}
+
+.header-rows {
+  padding: 3% 5%;
+}
+
+h1 {
+  color: #0A2850;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 110px;
+}
+
+.dot {
+  font-size: 5px;
+  position: absolute;
+  top: 102px;
+}
+
+.dot-1 {
+  left: 50px;
+}
+
+.dot-2 {
+  left: 60px;
+}
+
+.dot-3 {
+  left: 70px;
+}
+
+.dot-4 {
+  left: 80px;
+}
+
+.dot-5 {
+  left: 90px;
+}
+
+.dot-6 {
+  left: 100px;
+}
+
+.dot-7 {
+  left: 110px;
+}
+
+.dot-8 {
+  left: 120px;
+}
+
+.dot-9 {
+  left: 130px;
+}
+
+.dot-10 {
+  left: 140px;
+}
+
+.dot-11 {
+  left: 150px;
+}
+
+.dot-12 {
+  left: 160px;
+}
+
+.eczane {
+  color: #FFFFFF;
+  font-size: 50px;
+  margin-left: -15px;
+}
+
+.eczane-text-style {
+  color: #A6F6F1;
+}
+
+.dot-hr {
+  color: #ccf6c8;
+  left: 37px;
+  padding-bottom: 5%;
+  position: relative;
+  text-align: left;
+}
+
+.sub-dot-hr {
+  padding-right: 7px;
+}
+
+h6 {
+  color: #e4F9FF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+}
