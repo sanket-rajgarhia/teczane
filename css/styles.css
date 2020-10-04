@@ -6,7 +6,7 @@ html, body, header, #intro {
 /* Header Section CSS Styles */
 @media (min-width: 434px) {
   .nb-expanded-bg-color {
-    background-color: #0a2850;
+    background-color: #0A2850;
   }
 }
 
@@ -14,6 +14,10 @@ html, body, header, #intro {
   .nb-expanded-bg-color {
     background-color: unset;
   }
+}
+
+li {
+  padding-right: 10px;
 }
 
 #intro {
@@ -35,8 +39,8 @@ html, body, header, #intro {
   width: 30%;
   height: auto;
   /* background-color: #A6F6F1; */
-  /* background-color: #d9ecf2; */
-  /* background-color: #fecb89; */
+  /* background-color: #D9ECF2; */
+  /* background-color: #FECb89; */
   /* border-radius: 25px 0; */
 }
 
@@ -115,20 +119,26 @@ h1 {
 }
 
 .dot-hr {
-  color: #ccf6c8;
-  left: 37px;
+  color: #CCF6C8;
+  margin: 5% 0;
   padding-bottom: 5%;
-  position: relative;
   text-align: left;
 }
 
 .sub-dot-hr {
+  left: 37px;
   padding-right: 7px;
+  position: relative;
 }
 
 h6 {
-  color: #e4F9FF;
+  color: #E4F9FF;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 200;
+  padding-bottom: 4%;
+}
+
+.button {
+  margin-left: 0;
 }
