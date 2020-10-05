@@ -60,7 +60,7 @@ nav div ul li {
 .header-content {
   left: 10%;
   position: absolute;
-  top: 10.2%;
+  top: 10%;
   width: 55%;
 }
 
@@ -72,6 +72,7 @@ nav div ul li {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-weight: normal !important;
+  margin-bottom: 0;
 }
 
 .eczane {
