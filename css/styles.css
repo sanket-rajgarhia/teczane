@@ -1,4 +1,4 @@
-html, body, header{
+html, body, header {
   height: 100%;
   margin: 0;
 }
@@ -10,6 +10,7 @@ html, body, header{
     background-color: #0A2850;
   }
 }
+
 /* On Screen sizes 992px and more */
 @media screen and (min-width: 992px) {
   .nb-expanded-bg-color {
@@ -21,34 +22,16 @@ li {
   padding-right: 10px;
 }
 
-/* On Screen sizes 768px and less */
-@media screen and (max-width:768px) {
-  #intro {
-    background: url("../images/header-fluid.png");
-    background-attachment: scroll;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    -webkit-background-size: contain;
-  }
-}
-
-/* On Screen sizes 769px and more */
-@media screen and (min-width: 769px) {
-  #intro {
-    background: url("../images/header-fluid.png");
-    background-attachment: scroll;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-  }
+#intro {
+  background: url("../images/header-fluid.png");
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 .brand {
