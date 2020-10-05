@@ -97,6 +97,7 @@ nav div ul li {
 
 .dot {
   font-size: 5px;
+  font-weight: heavy !important;
   color: white;
 }
 
