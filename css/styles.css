@@ -27,6 +27,112 @@ html, body, header {
   background: rgba(7, 149, 253, 0.67);
 }
 
+/* Support Bar */
+.header-quick-access {
+  border: 1px solid #deedf338;
+  margin-bottom: 5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Email Support */
+.email {
+  align-items: center;
+  display: flex;
+  font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
+  font-weight: 500;
+  justify-content: center;
+  margin: auto 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .email {
+    font-size: calc(12px + (12 - 15) * ((100vw - 400px) / (1200 - 400)));
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .email {
+    font-size: calc(12px + (12 - 24) * ((100vw - 400px) / (1200 - 400)));
+  }
+}
+
+/* Email Support */
+/* Phone Support */
+.phone-support {
+  align-items: center;
+  border-left: 1px solid #DEEDF338;
+  border-right: 1px solid #DEEDF338;
+  display: flex;
+  font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
+  font-weight: 500;
+  justify-content: center;
+  margin: auto 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .phone-support {
+    font-size: calc(12px + (12 - 15) * ((100vw - 400px) / (1200 - 400)));
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .phone-support {
+    font-size: calc(12px + (12 - 24) * ((100vw - 400px) / (1200 - 400)));
+  }
+}
+
+/* Phone Support */
+/* Login */
+.login {
+  align-items: center;
+  display: flex;
+  font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
+  font-weight: 500;
+  justify-content: center;
+  margin: auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .login {
+    font-size: calc(12px + (12 - 15) * ((100vw - 400px) / (1200 - 400)));
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .login {
+    font-size: calc(12px + (12 - 24) * ((100vw - 400px) / (1200 - 400)));
+  }
+}
+
+/* Login */
+/* Common to Email Support and Login inline items */
+.quick-access-icon {
+  color: #FFFFFF;
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.quick-access-text {
+  color: #E2E6ECBA;
+  padding-right: 10px;
+}
+
+/* Common to Email Support and Login inline items */
+/* Anchor tags */
+.support {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.support:hover {
+  color: #1d2d50;
+}
+
+/* Anchor tags */
+/* Support Bar */
 /* Navbar CSS Styles */
 /* On Screen sizes 991px and less */
 @media screen and (max-width: 991px) {
@@ -46,21 +152,12 @@ nav div ul li {
   padding-right: 10px;
 }
 
-.brand {
-  max-width: 100px;
-}
-
-.teczane-logo {
-  width: 40%;
-  height: auto;
-}
-
 /* Navbar CSS Styles */
 /* Header Content Styling CSS */
 .header-content {
   left: 10%;
   position: absolute;
-  top: 10%;
+  top: 25%;
   width: 55%;
 }
 
@@ -98,7 +195,7 @@ nav div ul li {
 .dot {
   font-size: 5px;
   font-weight: heavy !important;
-  color: white;
+  color: #FFFFFF;
 }
 
 .dot-hr {
@@ -129,7 +226,7 @@ nav div ul li {
 }
 
 .button-learn {
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
 }
 
 /* Header Content Styling CSS */
