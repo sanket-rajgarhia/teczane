@@ -134,6 +134,13 @@ h1 {
   position: relative;
 }
 
+/* On Screen sizes 768px and less */
+@media screen and (max-width: 768px) {
+  h6 {
+    font-size: calc(16px + (16 - 10) * ((100vw - 400px) / (1200 - 400)));
+  }
+}
+
 h6 {
   color: #E4F9FF;
   font-family: 'Montserrat', sans-serif;
