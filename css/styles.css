@@ -68,7 +68,10 @@ nav div ul li {
   color: #0A2850;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 110px;
-  font-weight: 400;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal !important;
 }
 
 .eczane {
@@ -79,7 +82,10 @@ nav div ul li {
 
 .eczane-text-style {
   color: #A6F6F1;
-  font-weight: 400;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal !important;
 }
 
 .dot-container {
