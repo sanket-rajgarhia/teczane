@@ -3,7 +3,31 @@ html, body, header {
   margin: 0;
 }
 
-/* Header Section CSS Styles */
+/* ---------- Header Styles CSS ---------- */
+.header {
+  background: url("../images/header-fluid.png");
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  overflow: hidden;
+}
+
+/* Provides tint to the background image */
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 149, 253, 0.67);
+}
+
+/* Navbar CSS Styles */
 /* On Screen sizes 991px and less */
 @media screen and (max-width: 991px) {
   .nb-expanded-bg-color {
@@ -18,137 +42,87 @@ html, body, header {
   }
 }
 
-li {
+nav div ul li {
   padding-right: 10px;
 }
 
-#intro {
-  background: url("../images/header-fluid.png");
-  background-attachment: scroll;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-}
-
 .brand {
-  max-width: 200px;
+  max-width: 100px;
 }
 
 .teczane-logo {
-  width: 30%;
+  width: 40%;
   height: auto;
-  /* background-color: #A6F6F1; */
-  /* background-color: #D9ECF2; */
-  /* background-color: #FECb89; */
-  /* border-radius: 25px 0; */
 }
 
-.header-rows {
-  padding: 3% 5%;
+/* Navbar CSS Styles */
+/* Header Content Styling CSS */
+.header-content {
+  left: 10%;
+  position: absolute;
+  top: 13.5%;
+  width: 55%;
 }
 
-h1 {
+.header-h1 {
   color: #0A2850;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 110px;
-}
-
-.dot {
-  font-size: 5px;
-  position: absolute;
-  top: 102px;
-}
-
-.dot-1 {
-  left: 50px;
-}
-
-.dot-2 {
-  left: 60px;
-}
-
-.dot-3 {
-  left: 70px;
-}
-
-.dot-4 {
-  left: 80px;
-}
-
-.dot-5 {
-  left: 90px;
-}
-
-.dot-6 {
-  left: 100px;
-}
-
-.dot-7 {
-  left: 110px;
-}
-
-.dot-8 {
-  left: 120px;
-}
-
-.dot-9 {
-  left: 130px;
-}
-
-.dot-10 {
-  left: 140px;
-}
-
-.dot-11 {
-  left: 150px;
-}
-
-.dot-12 {
-  left: 160px;
+  font-weight: 500;
 }
 
 .eczane {
   color: #FFFFFF;
   font-size: 50px;
-  margin-left: -15px;
+  margin-left: 5px;
 }
 
 .eczane-text-style {
   color: #A6F6F1;
+  font-weight: 900;
+}
+
+.dot-container {
+  position: absolute;
+  top: 42px;
+  left: 34px;
+}
+
+.dot {
+  font-size: 5px;
+  color: white;
 }
 
 .dot-hr {
   color: #CCF6C8;
-  margin: 5% 0;
-  padding-bottom: 5%;
-  text-align: left;
+  margin: 5% 0 5% 34px;
+  font-size: 24px;
 }
 
-.sub-dot-hr {
-  left: 37px;
-  padding-right: 7px;
-  position: relative;
+.header-h6 {
+  color: #E4F9FF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
+  font-weight: 200;
+  width: 80%;
 }
 
 /* On Screen sizes 768px and less */
 @media screen and (max-width: 768px) {
-  h6 {
-    font-size: calc(16px + (16 - 10) * ((100vw - 400px) / (1200 - 400)));
+  .header-h6 {
+    font-size: calc(10px + (10 - 8) * ((100vw - 400px) / (1200 - 400)));
+    width: 100%;
   }
-}
-
-h6 {
-  color: #E4F9FF;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 200;
-  padding-bottom: 4%;
 }
 
 .button {
   margin-left: 0;
+  margin-top: 5%;
 }
+
+.button-learn {
+  border: 1px solid white;
+}
+
+/* Header Content Styling CSS */
+/* ---------- Header Styles CSS ---------- */
