@@ -31,7 +31,7 @@ html, body, header {
 .header-quick-access {
   border: 1px solid #deedf338;
   font-family: 'Open Sans', sans-serif;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   padding-bottom: 5px;
   padding-top: 5px;
 }
@@ -153,12 +153,13 @@ nav div ul li {
 .header-content {
   left: 10%;
   position: absolute;
-  top: 25%;
+  top: 22%;
   width: 55%;
 }
 
 .header-h1 {
   color: #0A2850;
+  display: block;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 110px;
   font-weight: normal !important;
