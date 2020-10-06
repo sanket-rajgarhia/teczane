@@ -37,6 +37,12 @@ html, body, header {
   padding-top: 5px;
 }
 
+@media screen and (max-width: 991px) {
+  .header-quick-access {
+    margin-bottom: 5px;
+  }
+}
+
 /* Email Support */
 .email {
   align-items: center;
