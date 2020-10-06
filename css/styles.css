@@ -4,35 +4,37 @@ html, body, header {
 }
 
 /* ---------- Header Styles CSS ---------- */
+/* Main Header Container div CSS Styles */
 .header {
   background: url("../images/header-fluid.png");
   background-attachment: scroll;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
+  height: 100%;
   overflow: hidden;
 }
 
 /* Provides tint to the background image */
 .overlay {
-  position: absolute;
+  background: rgba(7, 149, 253, 0.67);
+  height: 100%;
   left: 0;
+  position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(7, 149, 253, 0.67);
 }
 
 /* Support Bar */
 .header-quick-access {
   border: 1px solid #deedf338;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 5%;
-  padding-top: 5px;
   padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 /* Email Support */
@@ -48,20 +50,13 @@ html, body, header {
 
 @media screen and (max-width: 768px) {
   .email {
-    font-size: calc(12px + (12 - 15) * ((100vw - 400px) / (1200 - 400)));
-  }
-}
-
-@media screen and (max-width: 610px) {
-  .email {
-    font-size: calc(12px + (12 - 24) * ((100vw - 400px) / (1200 - 400)));
     justify-content: flex-start;
-    padding-top: 15px;
     padding-left: 15px;
+    padding-top: 15px;
   }
 }
 
-/* Email Support */
+/* End Email Support */
 /* Phone Support */
 .phone-support {
   align-items: center;
@@ -77,19 +72,13 @@ html, body, header {
 
 @media screen and (max-width: 768px) {
   .phone-support {
-    font-size: calc(12px + (12 - 15) * ((100vw - 400px) / (1200 - 400)));
-  }
-}
-
-@media screen and (max-width: 610px) {
-  .phone-support {
-    font-size: calc(12px + (12 - 24) * ((100vw - 400px) / (1200 - 400)));
     justify-content: flex-start;
     padding-left: 15px;
+    padding-top: 15px;
   }
 }
 
-/* Phone Support */
+/* End Phone Support */
 /* Login */
 .login {
   align-items: center;
@@ -102,22 +91,16 @@ html, body, header {
 
 @media screen and (max-width: 768px) {
   .login {
-    font-size: calc(12px + (12 - 15) * ((100vw - 400px) / (1200 - 400)));
-  }
-}
-
-@media screen and (max-width: 610px) {
-  .login {
-    font-size: calc(12px + (12 - 24) * ((100vw - 400px) / (1200 - 400)));
     justify-content: flex-start;
     padding-bottom: 10px;
+    padding-top: 15px;
   }
 }
 
-/* Login */
+/* End Login */
 /* Common to Email Support and Login inline items */
 .quick-access-icon {
-  color: #FFFFFF;
+  color: #EEEEEE;
   font-size: 25px;
   padding-right: 10px;
 }
@@ -127,19 +110,19 @@ html, body, header {
   padding-right: 10px;
 }
 
-/* Common to Email Support and Login inline items */
+/* End Common to Email Support and Login inline items */
 /* Anchor tags */
 .support {
-  text-decoration: none;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .support:hover {
-  color: #1d2d50;
+  color: #1D2D50;
 }
 
-/* Anchor tags */
-/* Support Bar */
+/* End Anchor tags */
+/* End Support Bar */
 /* Navbar CSS Styles */
 /* On Screen sizes 991px and less */
 @media screen and (max-width: 991px) {
@@ -159,7 +142,7 @@ nav div ul li {
   padding-right: 10px;
 }
 
-/* Navbar CSS Styles */
+/* End Navbar CSS Styles */
 /* Header Content Styling CSS */
 .header-content {
   left: 10%;
@@ -172,9 +155,6 @@ nav div ul li {
   color: #0A2850;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 110px;
-  font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   font-weight: normal !important;
   margin-bottom: 0;
 }
@@ -187,28 +167,25 @@ nav div ul li {
 
 .eczane-text-style {
   color: #A6F6F1;
-  font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   font-weight: normal !important;
 }
 
 .dot-container {
+  left: 34px;
   position: absolute;
   top: 42px;
-  left: 34px;
 }
 
 .dot {
+  color: #FFFFFF;
   font-size: 5px;
   font-weight: heavy !important;
-  color: #FFFFFF;
 }
 
 .dot-hr {
   color: #CCF6C8;
-  margin: 2.5% 0 5% 34px;
   font-size: 24px;
+  margin: 2.5% 0 5% 34px;
 }
 
 .header-h6 {
@@ -233,8 +210,13 @@ nav div ul li {
 }
 
 .button-learn {
+  background-color: #0A2850;
   border: 1px solid #FFFFFF;
 }
 
-/* Header Content Styling CSS */
-/* ---------- Header Styles CSS ---------- */
+.button-learn:active {
+  background-color: #CD0A0A;
+}
+
+/* End Header Content Styling CSS */
+/* ---------- End Header Styles CSS ---------- */
