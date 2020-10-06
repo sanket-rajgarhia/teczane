@@ -1,4 +1,6 @@
 html, body, header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   min-height: 100vh;
   margin: 0;
 }
@@ -30,7 +32,8 @@ html, body, header {
 /* Support Bar */
 .header-quick-access {
   border: 1px solid #deedf338;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
   margin-bottom: 3%;
   padding-bottom: 5px;
   padding-top: 5px;
@@ -47,7 +50,6 @@ html, body, header {
   align-items: center;
   display: flex;
   font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
-  font-weight: 500;
   justify-content: center;
   margin: auto 0;
   padding: 0;
@@ -69,7 +71,6 @@ html, body, header {
   border-right: 1px solid #DEEDF338;
   display: flex;
   font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
-  font-weight: 500;
   justify-content: center;
   margin: auto 0;
   padding: 0;
@@ -89,7 +90,6 @@ html, body, header {
   align-items: center;
   display: flex;
   font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
-  font-weight: 500;
   justify-content: center;
   margin: auto 0;
 }
@@ -196,9 +196,9 @@ nav div ul li {
 
 .header-h6 {
   color: #E4F9FF;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
-  font-weight: 200;
+  font-weight: 300;
   width: 80%;
 }
 
@@ -209,7 +209,8 @@ nav div ul li {
     width: 100%;
   }
 }
-.button{
+
+.button {
   margin-left: 0;
 }
 
@@ -229,3 +230,11 @@ nav div ul li {
 
 /* End Header Content Styling CSS */
 /* ---------- End Header Styles CSS ---------- */
+/* ---------- Main Styles CSS ---------- */
+main {
+  margin: 10% 5%;
+}
+
+#services {
+  border: 1px solid black;
+}
