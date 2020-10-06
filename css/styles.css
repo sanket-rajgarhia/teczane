@@ -1,5 +1,6 @@
 html, body, header {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   margin: 0;
 }
 
@@ -15,6 +16,7 @@ html, body, header {
   -o-background-size: cover;
   -webkit-background-size: cover;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
 }
 
@@ -22,6 +24,7 @@ html, body, header {
 .overlay {
   background: rgba(7, 149, 253, 0.67);
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   left: 0;
   position: absolute;
   top: 0;
