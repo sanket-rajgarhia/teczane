@@ -1,5 +1,5 @@
 html, body, header {
-  height: 100%;
+  height: 100vh;
   margin: 0;
 }
 
@@ -14,14 +14,14 @@ html, body, header {
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
 /* Provides tint to the background image */
 .overlay {
   background: rgba(7, 149, 253, 0.67);
-  height: 100%;
+  height: 100vh;
   left: 0;
   position: absolute;
   top: 0;
