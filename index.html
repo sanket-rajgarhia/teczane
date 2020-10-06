@@ -26,9 +26,10 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
 
         <script type="text/javascript">
-            $(window).bind('orientationchange', function(event) {
-                location.reload(true);
-            });
+            function readDeviceOrientation() {
+                location.reload();
+            }
+            window.onorientationchange = readDeviceOrientation;
         </script>
     </head>
     <!-- Head -->
