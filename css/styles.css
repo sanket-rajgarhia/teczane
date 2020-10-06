@@ -1,5 +1,8 @@
 html, body, header {
   height: 100vh;
+  height: -webkit-fill-available;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
   margin: 0;
 }
 
@@ -15,6 +18,9 @@ html, body, header {
   -o-background-size: cover;
   -webkit-background-size: cover;
   height: 100vh;
+  height: -webkit-fill-available;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
   overflow: hidden;
 }
 
@@ -22,6 +28,9 @@ html, body, header {
 .overlay {
   background: rgba(7, 149, 253, 0.67);
   height: 100vh;
+  height: -webkit-fill-available;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
   left: 0;
   position: absolute;
   top: 0;
@@ -222,9 +231,10 @@ nav div ul li {
   color: #FFFFFF;
 }
 
-.button-learn:hover{
+.button-learn:hover {
   color: #FFFFFF;
 }
+
 .button-learn:active {
   background-color: #CD0A0A;
 }
