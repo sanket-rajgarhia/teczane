@@ -19,8 +19,6 @@ html, body, header {
   -webkit-background-size: cover;
   height: 100vh;
   height: -webkit-fill-available;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
 }
 
 /* Provides tint to the background image */
@@ -28,8 +26,6 @@ html, body, header {
   background: rgba(7, 149, 253, 0.67);
   height: 100vh;
   height: -webkit-fill-available;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
   left: 0;
   position: absolute;
   top: 0;
