@@ -93,6 +93,7 @@ html, body, header {
   .login {
     justify-content: flex-start;
     padding-bottom: 5px;
+    padding-left: 10px;
     padding-top: 5px;
   }
 }
