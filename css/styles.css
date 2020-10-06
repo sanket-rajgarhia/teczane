@@ -219,8 +219,12 @@ nav div ul li {
 .button-learn {
   background-color: #0A2850;
   border: 1px solid #FFFFFF;
+  color: #FFFFFF;
 }
 
+.button-learn:hover{
+  color: #FFFFFF;
+}
 .button-learn:active {
   background-color: #CD0A0A;
 }
