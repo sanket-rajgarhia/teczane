@@ -1,8 +1,5 @@
 html, body, header {
-  height: 100vh;
-  height: -webkit-fill-available;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -17,15 +14,13 @@ html, body, header {
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  height: 100vh;
-  height: -webkit-fill-available;
+  min-height: 100vh;
 }
 
 /* Provides tint to the background image */
 .overlay {
   background: rgba(7, 149, 253, 0.67);
-  height: 100vh;
-  height: -webkit-fill-available;
+  min-height: 100vh;
   left: 0;
   position: absolute;
   top: 0;
