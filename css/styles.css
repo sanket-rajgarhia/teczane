@@ -235,6 +235,56 @@ main {
   margin: 10% 5%;
 }
 
+.hr-h2 {
+  width: 30%;
+  margin: 2.5% auto;
+  border-color: #FF414D;
+}
+
+@media screen and (max-width: 991px) {
+  .hr-h2 {
+    margin-left: 0;
+    width: 35%;
+  }
+}
+
 #services {
-  border: 1px solid black;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.services-header {
+  margin: 0 auto 0;
+  width: 40%;
+}
+
+@media screen and (max-width: 991px) {
+  .services-header {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+.service-card {
+  border: 10px solid #EEEEEE;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.service-card-body {
+  padding: 0;
+}
+
+.service-card-title {
+  background-color: #0A2850;
+  color: #EEEEEE;
+  padding: 10%;
+}
+
+.service-card-text {
+  padding: 5px;
+  margin: 5px;
+  text-align: left;
 }
