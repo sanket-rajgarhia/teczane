@@ -1,3 +1,6 @@
+/***************************************/
+/***************************************/
+/* COMMON CSS CODE - FULL WEB PAGE */
 html, body, header {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -5,6 +8,8 @@ html, body, header {
   margin: 0;
 }
 
+/***************************************/
+/***************************************/
 /* ---------- Header Styles CSS ---------- */
 /* Main Header Container div CSS Styles */
 .header {
@@ -29,7 +34,7 @@ html, body, header {
   width: 100vw;
 }
 
-/* Support Bar */
+/* ########## Support Bar ########## */
 .header-quick-access {
   border: 1px solid #deedf338;
   font-family: 'Noto Sans JP', sans-serif;
@@ -63,7 +68,6 @@ html, body, header {
   }
 }
 
-/* End Email Support */
 /* Phone Support */
 .phone-support {
   align-items: center;
@@ -84,7 +88,6 @@ html, body, header {
   }
 }
 
-/* End Phone Support */
 /* Login */
 .login {
   align-items: center;
@@ -103,7 +106,6 @@ html, body, header {
   }
 }
 
-/* End Login */
 /* Common to Email Support and Login inline items */
 .quick-access-icon {
   color: #EEEEEE;
@@ -116,7 +118,6 @@ html, body, header {
   padding-right: 10px;
 }
 
-/* End Common to Email Support and Login inline items */
 /* Anchor tags */
 .support {
   color: #FFFFFF;
@@ -127,9 +128,7 @@ html, body, header {
   color: #1D2D50;
 }
 
-/* End Anchor tags */
-/* End Support Bar */
-/* Navbar CSS Styles */
+/* ########## Navbar CSS Styles ##########*/
 /* On Screen sizes 991px and less */
 @media screen and (max-width: 991px) {
   .nb-expanded-bg-color {
@@ -144,12 +143,13 @@ html, body, header {
   }
 }
 
+/* Navbar link-item */
 nav div ul li {
   padding-right: 10px;
 }
 
-/* End Navbar CSS Styles */
-/* Header Content Styling CSS */
+/* ########## Header Content Styling CSS ########## */
+/* Main Header Content Box */
 .header-content {
   left: 10%;
   position: absolute;
@@ -157,6 +157,7 @@ nav div ul li {
   width: 55%;
 }
 
+/* Header h1 */
 .header-h1 {
   color: #0A2850;
   font-family: 'Barlow Condensed', sans-serif;
@@ -165,35 +166,41 @@ nav div ul li {
   margin-bottom: 0;
 }
 
+/* Styling the 't' in teczane */
 .eczane {
   color: #FFFFFF;
   font-size: 50px;
   margin-left: 5px;
 }
 
+/* Styling the 'eczane' in teczane */
 .eczane-text-style {
   color: #A6F6F1;
   font-weight: normal !important;
 }
 
+/* Positioning the dots infront of the t in teczane */
 .dot-container {
   left: 34px;
   position: absolute;
   top: 42px;
 }
 
+/* Styling the dots infront of the t in teczane */
 .dot {
   color: #FFFFFF;
   font-size: 5px;
   font-weight: heavy !important;
 }
 
+/* Styling the hr dots */
 .dot-hr {
   color: #CCF6C8;
   font-size: 24px;
   margin: 0.5% 0 3% 34px;
 }
 
+/* Styling the header description text */
 .header-h6 {
   color: #E4F9FF;
   font-family: 'Noto Sans JP', sans-serif;
@@ -210,10 +217,12 @@ nav div ul li {
   }
 }
 
+/* Common style for buttons in the Header Content Section */
 .button {
   margin-left: 0;
 }
 
+/* Style for 'Learn More' button in the Header Content Section */
 .button-learn {
   background-color: #0A2850;
   border: 1px solid #FFFFFF;
@@ -228,63 +237,73 @@ nav div ul li {
   background-color: #CD0A0A;
 }
 
-/* End Header Content Styling CSS */
-/* ---------- End Header Styles CSS ---------- */
 /* ---------- Main Styles CSS ---------- */
+/***********************************************/
+/***********************************************/
+/* COMMON CODE TO ALL ELEMENTS IN WEB PAGE */
 main {
   margin: 10% 5%;
 }
 
+.section-header {
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0 auto 0;
+  width: 40%;
+}
+
+@media screen and (max-width: 991px) {
+  .section-header {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
 .hr-h2 {
-  width: 30%;
-  margin: 2.5% auto;
   border-color: #FF414D;
+  margin: 2.5% auto;
+  width: 20%;
 }
 
 @media screen and (max-width: 991px) {
   .hr-h2 {
     margin-left: 0;
-    width: 120px;
+    width: 190px;
   }
 }
 
+/* END COMMON CODE TO ALL ELEMENTS IN WEB PAGE */
+/***********************************************/
+/***********************************************/
 #services {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   text-align: center;
 }
 
-.services-header {
-  margin: 0 auto 0;
-  width: 40%;
-}
-
-@media screen and (max-width: 991px) {
-  .services-header {
-    margin-left: 0;
-    text-align: left;
-  }
-}
-
+/* Styling individual service card */
 .service-card {
   border: 10px solid #EEEEEE;
-  position: relative;
-  margin-top: 5%;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
+/* Styling the service card body*/
 .service-card-body {
   padding: 0;
 }
 
+/* Styling the service card title */
 .service-card-title {
   background-color: #0A2850;
   color: #EEEEEE;
   padding: 10%;
 }
 
+/* Styling the service card text */
 .service-card-text {
-  padding: 5px;
   margin: 5px;
+  padding: 5px;
   text-align: left;
 }
