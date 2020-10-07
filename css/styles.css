@@ -8,6 +8,9 @@ html, body, header {
   margin: 0;
 }
 
+.placeholder{
+  visibility: hidden;
+}
 /***************************************/
 /***************************************/
 /* ---------- Header Styles CSS ---------- */
@@ -133,6 +136,7 @@ html, body, header {
 @media screen and (max-width: 991px) {
   .nb-expanded-bg-color {
     background-color: #0A2850;
+    opacity: 0.8;
   }
 }
 
@@ -241,11 +245,12 @@ nav div ul li {
 /***********************************************/
 /***********************************************/
 /* COMMON CODE TO ALL ELEMENTS IN WEB PAGE */
-main {
-  margin: 10% 5%;
+.section-wrapper {
+  margin: 0 5%;
 }
 
 .section-header {
+  color: #0A2850;
   font-family: 'Raleway', sans-serif;
   font-size: 48px;
   font-weight: 500;
@@ -253,29 +258,27 @@ main {
   width: 40%;
 }
 
-@media screen and (max-width: 991px) {
-  .section-header {
-    margin-left: 0;
-    text-align: left;
-  }
-}
-
 .hr-h2 {
-  border-color: #FF414D;
-  margin: 2.5% auto;
-  width: 20%;
+  margin: 2.5% auto 3.5% auto;
+  width: 40%;
 }
 
-@media screen and (max-width: 991px) {
-  .hr-h2 {
-    margin-left: 0;
-    width: 190px;
-  }
+.hr-h2-white {
+  border-color: #FFFFFF;
+  margin: 2.5% auto 3.5% auto;
+  width: 40%;
 }
 
 /* END COMMON CODE TO ALL ELEMENTS IN WEB PAGE */
 /***********************************************/
 /***********************************************/
+/* ########## Main -  Services Section ########## */
+.service-bg-wrapper {
+  background-color: #FFFFFF;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
 #services {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
@@ -284,9 +287,17 @@ main {
 
 /* Styling individual service card */
 .service-card {
-  border: 10px solid #EEEEEE;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  border: 1px solid #C0C0C475;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+/* Styling the service card header */
+.service-card-header {
+  background-color: #0A2850;
+  color: #EEEEEE;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 /* Styling the service card body*/
@@ -294,16 +305,111 @@ main {
   padding: 0;
 }
 
-/* Styling the service card title */
-.service-card-title {
-  background-color: #0A2850;
-  color: #EEEEEE;
-  padding: 10%;
-}
-
 /* Styling the service card text */
 .service-card-text {
+  font-weight: 300 ! important;
   margin: 5px;
   padding: 5px;
   text-align: left;
+}
+
+/* ########## Main -  Pricing Section ########## */
+.pricing-bg-wrapper {
+  background-color: #EEEEEE61;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+#pricing {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Styling individual pricing card */
+.pricing-card {
+  border: 1px solid #C0C0C475;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+/* Styling the pricing card header */
+.pricing-card-header-1 {
+  background-color: #0C6FE870;
+  border-bottom: #FFFFFF;
+  padding: 15%;
+}
+
+.award{
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pricing-card-header-2 {
+  background-color: #9EE80C70;
+  border-bottom: #FFFFFF;
+  padding: 15%;
+}
+
+.pricing-card-header-3 {
+  background-color: #E80C8670;
+  border-bottom: #FFFFFF;
+  padding: 15%;
+}
+
+.pricing-card-header-4 {
+  background-color: #E80C0C70;
+  border-bottom: #FFFFFF;
+  padding: 15%;
+}
+
+/* Styling the pricing card header title */
+.pricing-card-header-title {
+  color: #0A2850;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* Styling the pricing card header price */
+.pricing-card-header-price {
+  color: #0A2850;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+}
+
+.decimal {
+  color: #faff00;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+/* Styling and positioning the pricing card header currency symbol */
+.pricing-card-header-currency-symbol {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  position: relative;
+  right: 5px;
+  top: -40px;
+  vertical-align: super;
+}
+
+.pricing-card-body {
+  text-align: left;
+}
+
+.pricing-card-text {
+  font-weight: 300 ! important;
+  line-height: 0.9;
+}
+
+.card-pricing-order-button{
+  font-size: 0.8rem ! important;
+  background-color: #0A2850;
+  color: #EEEEEE;
 }
