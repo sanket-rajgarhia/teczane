@@ -8,9 +8,10 @@ html, body, header {
   margin: 0;
 }
 
-.placeholder{
+.placeholder {
   visibility: hidden;
 }
+
 /***************************************/
 /***************************************/
 /* ---------- Header Styles CSS ---------- */
@@ -260,13 +261,13 @@ nav div ul li {
 
 .hr-h2 {
   margin: 2.5% auto 3.5% auto;
-  width: 40%;
+  width: 45%;
 }
 
 .hr-h2-white {
   border-color: #FFFFFF;
   margin: 2.5% auto 3.5% auto;
-  width: 40%;
+  width: 45%;
 }
 
 /* END COMMON CODE TO ALL ELEMENTS IN WEB PAGE */
@@ -340,13 +341,14 @@ nav div ul li {
   padding: 15%;
 }
 
-.award{
+.award {
   width: 20%;
   height: auto;
   position: absolute;
   top: 0;
   right: 0;
 }
+
 .pricing-card-header-2 {
   background-color: #9EE80C70;
   border-bottom: #FFFFFF;
@@ -399,17 +401,36 @@ nav div ul li {
   vertical-align: super;
 }
 
+/* Styling the pricing card body */
 .pricing-card-body {
   text-align: left;
 }
 
+/* Styling the pricing card text */
 .pricing-card-text {
   font-weight: 300 ! important;
   line-height: 0.9;
 }
 
-.card-pricing-order-button{
-  font-size: 0.8rem ! important;
+/* Styling the pricing card order button */
+.card-pricing-order-button {
   background-color: #0A2850;
   color: #EEEEEE;
+  font-size: 0.8rem ! important;
+}
+
+/* Styling the pricing card order button - hover state */
+.card-pricing-order-button:hover {
+  background-color: #0A2850;
+  border: 1px solid #FFFFFF;
+  color: #98C0F5;
+  font-size: 0.8rem ! important;
+}
+
+/* Styling the pricing card order button - active state */
+.card-pricing-order-button:active {
+  background-color: #F9F9F9;
+  border: 2px solid #AAAAAA;
+  color: black;
+  font-size: 0.8rem ! important;
 }
