@@ -256,9 +256,8 @@ nav div ul li {
   font-size: 48px;
   font-weight: 500;
   margin: 0 auto 0;
-  position: relative;
   border: 1px solid green;
-  width: 40%;
+  width: 90%;
 }
 
 .hr-h2-grey {
