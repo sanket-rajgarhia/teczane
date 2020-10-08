@@ -295,7 +295,7 @@ nav div ul li {
 
 /* Styling the service card header */
 .service-card-header {
-  background-color: #0A2850;
+  background-color: #0A356F91;
   color: #EEEEEE;
   font-weight: 400;
   font-size: 1.5rem;
@@ -334,13 +334,14 @@ nav div ul li {
   margin-top: 1%;
 }
 
-/* Styling the pricing card header */
+/* Styling the pricing card header - 1 */
 .pricing-card-header-1 {
   background-color: #0C6FE870;
   border-bottom: #FFFFFF;
   padding: 10%;
 }
 
+/* Styling the pricing card header - 2 */
 .award {
   width: 20%;
   height: auto;
@@ -355,12 +356,14 @@ nav div ul li {
   padding: 10%;
 }
 
+/* Styling the pricing card header - 3 */
 .pricing-card-header-3 {
   background-color: #E80C8670;
   border-bottom: #FFFFFF;
   padding: 10%;
 }
 
+/* Styling the pricing card header - 4 */
 .pricing-card-header-4 {
   background-color: #E80C0C70;
   border-bottom: #FFFFFF;
@@ -382,6 +385,7 @@ nav div ul li {
   font-weight: 400;
 }
 
+/* Styling the decimal portion */
 .decimal {
   color: #faff00;
   font-family: "Roboto", sans-serif;
@@ -447,30 +451,36 @@ nav div ul li {
   text-align: center;
 }
 
+/* Styling the Testimonial Section Header - Overriding the Section Header Style */
 .testimonial-section-header {
   color: #EEEEEE;
 }
 
+/* Carousel item spacing */
 .testimonials-carousel-item {
   padding: 0 12% 5% 12%;
 }
 
+/* Styling the Carousel text */
 .testimonial-text {
   color: #FFFFFF;
   font-size: calc(24px + (16 - 12) * ((100vw - 400px) / (1200 - 400)));
 }
 
+/* Styling the quotation marks */
 .quote {
   font-family: 'Arizonia', cursive;
   font-size: 48px;
 }
 
+/* Styling the Testimonial image */
 .testimonial-image {
   border-radius: 100%;
   margin: 20px;
   width: 30%;
 }
 
+/* Styling the Testimonal name */
 .testimonial-name{
   color: #98C0F5;
   font-weight: 300;
