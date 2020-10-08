@@ -259,7 +259,7 @@ nav div ul li {
   width: 40%;
 }
 
-.hr-h2 {
+.hr-h2-grey {
   margin: 2.5% auto 3.5% auto;
   width: 45%;
 }
@@ -338,7 +338,7 @@ nav div ul li {
 .pricing-card-header-1 {
   background-color: #0C6FE870;
   border-bottom: #FFFFFF;
-  padding: 15%;
+  padding: 10%;
 }
 
 .award {
@@ -352,19 +352,19 @@ nav div ul li {
 .pricing-card-header-2 {
   background-color: #9EE80C70;
   border-bottom: #FFFFFF;
-  padding: 15%;
+  padding: 10%;
 }
 
 .pricing-card-header-3 {
   background-color: #E80C8670;
   border-bottom: #FFFFFF;
-  padding: 15%;
+  padding: 10%;
 }
 
 .pricing-card-header-4 {
   background-color: #E80C0C70;
   border-bottom: #FFFFFF;
-  padding: 15%;
+  padding: 10%;
 }
 
 /* Styling the pricing card header title */
@@ -409,7 +409,6 @@ nav div ul li {
 /* Styling the pricing card text */
 .pricing-card-text {
   font-weight: 300 ! important;
-  line-height: 0.9;
 }
 
 /* Styling the pricing card order button */
