@@ -257,7 +257,7 @@ nav div ul li {
   font-weight: 500;
   margin: 0 auto 0;
   position: relative;
-  text-align: center;
+  border: 1px solid green;
   width: 40%;
 }
 
