@@ -256,14 +256,12 @@ nav div ul li {
   font-size: 48px;
   font-weight: 500;
   margin: 0 auto 0;
-  border: 1px solid green;
   width: 90%;
 }
 
 .hr-h2-grey {
   margin: 2.5% auto 3.5% auto;
   width: 45%;
-  border: 1px solid red;
 }
 
 .hr-h2-white {
