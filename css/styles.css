@@ -465,6 +465,7 @@ nav div ul li {
 .testimonial-text {
   color: #FFFFFF;
   font-size: calc(24px + (16 - 12) * ((100vw - 400px) / (1200 - 400)));
+  text-align: left;
 }
 
 /* Styling the quotation marks */
