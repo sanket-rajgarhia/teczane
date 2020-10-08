@@ -490,3 +490,86 @@ nav div ul li {
   color: #98C0F5;
   font-weight: 300;
 }
+
+/* ---------- Footer Styles CSS ---------- */
+.footer-bg-wrapper {
+  background-color: #EEEEEE;
+}
+
+/* Styling the teczane jumbotron */
+.footer-jumbotron {
+  background-color: #EEEEEE;
+  text-align: center;
+}
+
+/* Styling the 't' in teczane jumbotron */
+.footer-h1-t {
+  color: #0A2850;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 180px;
+  font-weight: normal !important;
+  margin-bottom: 0;
+}
+
+/* Styling the 'eczane' in teczane jumbotron */
+.footer-eczane {
+  color: #FFFFFF;
+  font-size: 45px;
+  font-weight: 500 ! important;
+  margin-left: 5px;
+}
+
+/* styling the teczane tagline */
+.footer-tagline {
+  text-align: center;
+}
+
+/* Positioning the footer contents */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* Size and spacing of social links */
+.social-link {
+  display: inline-block;
+  height: auto;
+  padding-right: 30px;
+  width: 60px;
+}
+
+/* Setting the size of the footer phone icon */
+.footer-phone-icon {
+  height: auto;
+  width: 25px;
+}
+
+/* Styling the footer telephone number text */
+.footer-telephone-text {
+  color: black;
+  font-weight: 400;
+}
+
+/* Styling the quick links text */
+.quick-link-text {
+  text-align: left;
+}
+
+/* Styling the footer navigation links */
+.footer-nav-link {
+  color: grey;
+  font-weight: 400;
+  padding: 0;
+  text-align: left;
+}
+
+/* Styling the copyright info */
+.copyright {
+  color: white;
+  font-weight: 400;
+  text-align: center;
+}
