@@ -297,8 +297,12 @@ nav div ul li {
 .service-card-header {
   background-color: #0A356F91;
   color: #EEEEEE;
-  font-weight: 400;
   font-size: 1.5rem;
+}
+
+/* Applying the font weight to Service Card Header - h5 */
+.service-card-header-text {
+  font-weight: 400 ! important;
 }
 
 /* Styling the service card body*/
@@ -482,7 +486,7 @@ nav div ul li {
 }
 
 /* Styling the Testimonal name */
-.testimonial-name{
+.testimonial-name {
   color: #98C0F5;
   font-weight: 300;
 }
