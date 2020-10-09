@@ -327,7 +327,6 @@ nav div ul li {
 }
 
 #pricing {
-  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   text-align: center;
 }
@@ -378,6 +377,7 @@ nav div ul li {
 /* Styling the pricing card header title */
 .pricing-card-header-title {
   color: #0A2850;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
 }
@@ -417,6 +417,7 @@ nav div ul li {
 
 /* Styling the pricing card text */
 .pricing-card-text {
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300 ! important;
 }
 
