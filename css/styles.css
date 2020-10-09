@@ -419,11 +419,20 @@ nav div ul li {
   font-weight: 300 ! important;
 }
 
+/* Styling the pricing card footer */
+.pricing-card-footer {
+  background-color: #FFFFFF;
+  border: none;
+  padding: 5px;
+}
+
 /* Styling the pricing card order button */
 .card-pricing-order-button {
   background-color: #0A2850;
   color: #EEEEEE;
   font-size: 0.8rem ! important;
+  margin: 0;
+  width: 100%;
 }
 
 /* Styling the pricing card order button - hover state */
