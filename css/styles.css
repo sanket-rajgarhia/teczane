@@ -3,6 +3,7 @@
 /* COMMON CSS CODE - FULL WEB PAGE */
 html, body, header {
   font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   font-weight: 100;
   min-height: 100vh;
   margin: 0;
