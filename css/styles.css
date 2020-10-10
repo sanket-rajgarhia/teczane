@@ -1,14 +1,17 @@
 /***************************************/
 /***************************************/
 /* COMMON CSS CODE - FULL WEB PAGE */
+/* Common styling for html, body and header */
 html, body, header {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
-  font-weight: 100;
-  min-height: 100vh;
+  font-weight: 400;
   margin: 0;
+  min-height: 100vh;
+  padding: 0;
 }
 
+/* PLACEHOLDER element - to be hidden but retained in the flow */
 .placeholder {
   visibility: hidden;
 }
@@ -40,15 +43,16 @@ html, body, header {
 }
 
 /* ########## Support Bar ########## */
+/* The main div class that holds the support bar */
 .header-quick-access {
-  border: 1px solid #deedf338;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 400;
+  border: 1px solid #DEEDF338;
+  font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1500 - 300)));
   margin-bottom: 3%;
   padding-bottom: 5px;
   padding-top: 5px;
 }
 
+/* Styling the header-quick-access section for screen size less than 992px */
 @media screen and (max-width: 991px) {
   .header-quick-access {
     margin-bottom: 0;
@@ -59,18 +63,9 @@ html, body, header {
 .email {
   align-items: center;
   display: flex;
-  font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
   justify-content: center;
   margin: auto 0;
   padding: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .email {
-    justify-content: flex-start;
-    padding-left: 10px;
-    padding-top: 10px;
-  }
 }
 
 /* Phone Support */
@@ -79,30 +74,33 @@ html, body, header {
   border-left: 1px solid #DEEDF338;
   border-right: 1px solid #DEEDF338;
   display: flex;
-  font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
   justify-content: center;
   margin: auto 0;
   padding: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .phone-support {
-    justify-content: flex-start;
-    padding-left: 10px;
-    padding-top: 5px;
-  }
 }
 
 /* Login */
 .login {
   align-items: center;
   display: flex;
-  font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
   justify-content: center;
   margin: auto 0;
 }
 
+/* Styling the support bar - email, phone and login for screen sizes less than 769 */
 @media screen and (max-width: 768px) {
+  .email {
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .phone-support {
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+
   .login {
     justify-content: flex-start;
     padding-bottom: 5px;
@@ -111,30 +109,33 @@ html, body, header {
   }
 }
 
-/* Common to Email Support and Login inline items */
+/* Styling COMMON structure present in Email Phone and Login inline items */
+/* Support icon */
 .quick-access-icon {
   color: #EEEEEE;
   font-size: 25px;
   padding-right: 10px;
 }
 
+/* Support text */
 .quick-access-text {
   color: #E2E6ECBA;
   padding-right: 10px;
 }
 
-/* Anchor tags */
+/* Support Links - Anchor tags */
 .support {
   color: #FFFFFF;
   text-decoration: none;
 }
 
+/* Support Links on mouse over - Anchor tags */
 .support:hover {
   color: #1D2D50;
 }
 
 /* ########## Navbar CSS Styles ##########*/
-/* On Screen sizes 991px and less */
+/* On Screen sizes 991px and less - provide background to the drop down menu */
 @media screen and (max-width: 991px) {
   .nb-expanded-bg-color {
     background-color: #0A2850;
@@ -142,7 +143,7 @@ html, body, header {
   }
 }
 
-/* On Screen sizes 992px and more */
+/* On Screen sizes 992px and more - remove background from menu */
 @media screen and (min-width: 992px) {
   .nb-expanded-bg-color {
     background-color: unset;
@@ -155,7 +156,7 @@ nav div ul li {
 }
 
 /* ########## Header Content Styling CSS ########## */
-/* Main Header Content Box */
+/* Main Header Content Section */
 .header-content {
   left: 10%;
   position: absolute;
@@ -163,26 +164,20 @@ nav div ul li {
   width: 55%;
 }
 
-/* Header h1 */
+/* Styling Header h1 't' in teczane - in the Header Content Section */
 .header-h1 {
   color: #0A2850;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 110px;
-  font-weight: normal !important;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
-/* Styling the 't' in teczane */
+/* Styling the 'eczane' in teczane */
 .eczane {
-  color: #FFFFFF;
+  color: #A6F6F1;
   font-size: 50px;
   margin-left: 5px;
-}
-
-/* Styling the 'eczane' in teczane */
-.eczane-text-style {
-  color: #A6F6F1;
-  font-weight: normal !important;
 }
 
 /* Positioning the dots infront of the t in teczane */
@@ -192,11 +187,10 @@ nav div ul li {
   top: 42px;
 }
 
-/* Styling the dots infront of the t in teczane */
+/* Styling the dots infront of the 't' in teczane */
 .dot {
   color: #FFFFFF;
   font-size: 5px;
-  font-weight: heavy !important;
 }
 
 /* Styling the hr dots */
@@ -209,16 +203,15 @@ nav div ul li {
 /* Styling the header description text */
 .header-h6 {
   color: #E4F9FF;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: calc(12px + (12 - 10) * ((100vw - 400px) / (1200 - 400)));
-  font-weight: 300;
+  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1500 - 300)));
+  padding-bottom: 10px;
   width: 80%;
 }
 
-/* On Screen sizes 768px and less */
+/* Styling the header description text - on Screen sizes 768px and less */
 @media screen and (max-width: 768px) {
   .header-h6 {
-    font-size: calc(10px + (10 - 8) * ((100vw - 400px) / (1200 - 400)));
+    font-size: calc(11px + (13 - 11) * ((100vw - 300px) / (1200 - 300)));
     width: 100%;
   }
 }
@@ -226,6 +219,12 @@ nav div ul li {
 /* Common style for buttons in the Header Content Section */
 .button {
   margin-left: 0;
+  margin-right: 10px;
+}
+
+/* Style for 'Sign Up' button in the Header Content Section */
+.button-sign-up:hover {
+  color: #EFF48E ! important;
 }
 
 /* Style for 'Learn More' button in the Header Content Section */
@@ -235,78 +234,91 @@ nav div ul li {
   color: #FFFFFF;
 }
 
+/* Style for 'Learn More' button on mouse over */
 .button-learn:hover {
-  color: #FFFFFF;
+  color: #98C0F5;
 }
 
+/* Style for 'Learn More' button on button click */
 .button-learn:active {
   background-color: #CD0A0A;
+  color: #FFFFFF;
 }
 
 /* ---------- Main Styles CSS ---------- */
 /***********************************************/
 /***********************************************/
 /* COMMON CODE TO ALL ELEMENTS IN WEB PAGE */
+/* Provided left and right margin to the main sections on the webpage */
 .section-wrapper {
   margin: 0 5%;
 }
 
+/* Styling the section header text */
 .section-header {
   color: #0A2850;
   font-family: 'Raleway', sans-serif;
-  font-size: 48px;
+  font-size: calc(36px + (48 - 36) * ((100vw - 300px) / (1200 - 300)));
   font-weight: 500;
   margin: 0 auto 0;
   width: 90%;
 }
 
+/* Styling the grey horizontal rule under the section header text */
 .hr-h2-grey {
   margin: 2.5% auto 3.5% auto;
   width: 70%;
 }
 
+/* Styling the white horizontal rule under the section header text */
 .hr-h2-white {
   border-color: #FFFFFF;
   margin: 2.5% auto 3.5% auto;
   width: 70%;
 }
 
+/* Provides the top and bottom margin for all columns (cards) being laid out in
+the layout grid. This is important when the cards collapse for smaller screens and
+stack vertically. */
+.col-margin {
+  margin-top: 0.8%;
+  margin-bottom: 0.8%;
+}
+
 /* END COMMON CODE TO ALL ELEMENTS IN WEB PAGE */
 /***********************************************/
 /***********************************************/
 /* ########## Main -  Services Section ########## */
+/* Background color of the services section and spacing from top and bottom sections */
 .service-bg-wrapper {
   background-color: #FFFFFF;
   padding-bottom: 5%;
   padding-top: 5%;
 }
 
+/* Common style for the services section */
 #services {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 400;
   text-align: center;
 }
 
 /* Styling individual service card */
 .service-card {
   border: 1px solid #C0C0C475;
-  margin-bottom: 1%;
-  margin-top: 1%;
 }
 
 /* Styling the service card header */
 .service-card-header {
   background-color: #0F53AF91;
   color: #EEEEEE;
-  font-size: 1.5rem;
 }
 
-/* Applying the font weight to Service Card Header - h5 */
+/* Styling the Service Card Header - h5 */
 .service-card-header-text {
+  font-size: 1.25rem;
   font-weight: 400 ! important;
 }
 
-/* Styling the service card body*/
+/* Styling the service card body */
 .service-card-body {
   padding: 0;
 }
@@ -320,14 +332,15 @@ nav div ul li {
 }
 
 /* ########## Main -  Pricing Section ########## */
+/* Background color of the pricing section and spacing from top and bottom sections */
 .pricing-bg-wrapper {
   background-color: #EEEEEE61;
   padding-bottom: 5%;
   padding-top: 5%;
 }
 
+/* Common style for the pricing section */
 #pricing {
-  font-weight: 400;
   text-align: center;
 }
 
@@ -345,7 +358,7 @@ nav div ul li {
   padding: 10%;
 }
 
-/* Styling the pricing card header - 2 */
+/* Best seller award icon - positioned in pricing card header 2 */
 .award {
   width: 20%;
   height: auto;
@@ -354,6 +367,7 @@ nav div ul li {
   right: 0;
 }
 
+/* Styling the pricing card header - 2 */
 .pricing-card-header-2 {
   background-color: #9EE80C70;
   border-bottom: #FFFFFF;
@@ -377,25 +391,8 @@ nav div ul li {
 /* Styling the pricing card header title */
 .pricing-card-header-title {
   color: #0A2850;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
-/* Styling the pricing card header price */
-.pricing-card-header-price {
-  color: #0A2850;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 96px;
-  font-weight: 400;
-}
-
-/* Styling the decimal portion */
-.decimal {
-  color: #faff00;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 100;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 /* Styling and positioning the pricing card header currency symbol */
@@ -410,6 +407,22 @@ nav div ul li {
   vertical-align: super;
 }
 
+/* Styling the pricing card header price */
+.pricing-card-header-price {
+  color: #0A2850;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+}
+
+/* Styling the decimal portion of the price */
+.decimal {
+  color: #FAFF00;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+}
+
 /* Styling the pricing card body */
 .pricing-card-body {
   text-align: left;
@@ -417,7 +430,6 @@ nav div ul li {
 
 /* Styling the pricing card text */
 .pricing-card-text {
-  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300 ! important;
 }
 
@@ -432,37 +444,34 @@ nav div ul li {
 .card-pricing-order-button {
   background-color: #0A2850;
   color: #EEEEEE;
-  font-size: 0.8rem ! important;
   margin: 0;
   width: 100%;
 }
 
-/* Styling the pricing card order button - hover state */
+/* Styling the pricing card order button - on mose over */
 .card-pricing-order-button:hover {
   background-color: #0A2850;
   border: 1px solid #FFFFFF;
   color: #98C0F5;
-  font-size: 0.8rem ! important;
 }
 
-/* Styling the pricing card order button - active state */
+/* Styling the pricing card order button - on button click */
 .card-pricing-order-button:active {
   background-color: #F9F9F9;
   border: 2px solid #AAAAAA;
   color: black;
-  font-size: 0.8rem ! important;
 }
 
 /* ########## Main -  Testimonials Section ########## */
+/* Background color of the testimonials section and spacing from top and bottom sections */
 .testimonials-bg-wrapper {
   background-color: #021223;
   padding-bottom: 5%;
   padding-top: 5%;
 }
 
+/* common styles for the testimonial section */
 #testimonials {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 400;
   text-align: center;
 }
 
@@ -479,15 +488,15 @@ nav div ul li {
 /* Styling the Carousel text */
 .testimonial-text {
   color: #FFFFFF;
-  font-size: calc(24px + (16 - 12) * ((100vw - 400px) / (1200 - 400)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1200 - 300)));
   text-align: left;
 }
 
 /* Styling the quotation marks */
 .quote {
   font-family: 'Arizonia', cursive;
-  font-size: 36px;
-  line-height: 0.6;
+  font-size: 28px;
+  line-height: 0.7;
 }
 
 /* Styling the Testimonial image */
@@ -497,15 +506,18 @@ nav div ul li {
   width: 30%;
 }
 
-/* Styling the Testimonal name */
+/* Styling the Testimonal contributor's name */
 .testimonial-name {
   color: #98C0F5;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
 /* ---------- Footer Styles CSS ---------- */
+/* Background color of the footer section and spacing from top and bottom sections */
 .footer-bg-wrapper {
   background-color: #EEEEEE;
+  padding-bottom: 3%;
 }
 
 /* Styling the teczane jumbotron */
@@ -519,21 +531,21 @@ nav div ul li {
   color: #0A2850;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 180px;
-  font-weight: normal !important;
+  font-weight: 400 ! important;
   margin-bottom: 0;
 }
 
 /* Styling the 'eczane' in teczane jumbotron */
 .footer-eczane {
   color: #FFFFFF;
-  font-size: 45px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 65px;
   font-weight: 500 ! important;
   margin-left: 5px;
 }
 
-/* styling the teczane tagline */
+/* Styling the teczane tagline */
 .footer-tagline {
-  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
   text-align: center;
 }
@@ -548,12 +560,22 @@ nav div ul li {
   text-align: center;
 }
 
+/* Aligning the footer-content-social with 'eczane' */
+.footer-content-social {
+  padding-top: 132px;
+}
+
 /* Size and spacing of social links */
 .social-link {
   display: inline-block;
   height: auto;
   padding-right: 30px;
   width: 60px;
+}
+
+/* Aligning the footer-content-phone with 'eczane' */
+.footer-content-phone {
+  padding-top: 132px;
 }
 
 /* Setting the size of the footer phone icon */
@@ -568,6 +590,18 @@ nav div ul li {
   font-weight: 400;
 }
 
+/* Adjusting the padding of the footer-content-social and footer-content-phone
+for screen sizes below 992px */
+@media screen and (max-width: 991px) {
+  .footer-content-social {
+    padding-top: 50px;
+  }
+
+  .footer-content-phone {
+    padding-top: 132px;
+  }
+}
+
 /* Styling the quick links text */
 .quick-link-text {
   text-align: left;
@@ -575,7 +609,7 @@ nav div ul li {
 
 /* Styling the footer navigation links */
 .footer-nav-link {
-  color: grey;
+  color: #B9B7B7;
   font-weight: 400;
   padding: 0;
   text-align: left;
@@ -583,7 +617,10 @@ nav div ul li {
 
 /* Styling the copyright info */
 .copyright {
-  color: white;
+  color: #021223;
   font-weight: 400;
+  font-size: 0.6rem;
   text-align: center;
 }
+
+/* ---------- END OF Styles CSS ---------- */
