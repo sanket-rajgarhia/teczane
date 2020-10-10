@@ -245,6 +245,13 @@ nav div ul li {
   color: #FFFFFF;
 }
 
+/* Style the buttons to be small in landscape mode to prevent overflow into the service section */
+@media screen and (orientation: landscape){
+  .button{
+    padding: .5rem 1.6rem;
+    font-size: 0.64rem;
+  }
+}
 /* ---------- Main Styles CSS ---------- */
 /***********************************************/
 /***********************************************/
