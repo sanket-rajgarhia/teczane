@@ -23,11 +23,12 @@
   width: 100vw;
 }
 
-@media screen and (orientation: landscape){
-  .header{
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .header {
     min-height: 100vh;
   }
-  .overlay{
+
+  .overlay {
     min-height: 100vh;
   }
 }
@@ -150,9 +151,10 @@
   margin-bottom: 0;
 }
 
-hr{
+hr {
   margin-right: 50px;
 }
+
 /* Styling the 'eczane' in teczane jumbotron */
 .contact-eczane {
   color: #DDDDDD;
@@ -174,8 +176,8 @@ hr{
   text-align: center;
 }
 
-@media screen and (min-width: 991px){
-  .contact-header{
+@media screen and (min-width: 991px) {
+  .contact-header {
     margin-top: 5%;
   }
 }
@@ -184,6 +186,6 @@ hr{
   min-height: 100px;
 }
 
-.send-button{
+.send-button {
   margin-left: 0;
 }
