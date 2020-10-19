@@ -1,0 +1,180 @@
+/* ---------- Header Styles CSS ---------- */
+/* Main Header Container div CSS Styles */
+.header {
+  background: url("../images/contact.jpg");
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  min-height: 70vh;
+}
+
+/* Provides tint to the background image */
+.overlay {
+  background: rgba(92, 108, 113, 0.67);
+  background: rgba(45, 58, 62, 0.70);
+  min-height: 70vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+/* ########## Header Content Styling CSS ########## */
+/* Main Header Content Section */
+/* Main Header Content Section */
+.header-content {
+  left: 2.5%;
+  position: absolute;
+  top: 50%;
+  width: 55%;
+}
+
+/* Styling Header h1 Contact Us - in the Header Content Section */
+.header-h1 {
+  color: #0A2850;
+  color: #FFFFFF;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .header-content {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .header-h1 {
+    bottom: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Applying style to the breadcrumb container */
+.breadcrum-container {
+  padding: 0;
+}
+
+/* Applying stlye to the main inner breadcrumb div */
+.breadcrumb {
+  background-color: #0A2850;
+  border-radius: 0;
+  color: #FFFFFF;
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+/* Styling the Breadcrumb separator image */
+.breadcrumb-img {
+  display: inline-block;
+  height: auto;
+  padding: 5px;
+  width: 25px;
+}
+
+/* ########## Main -  Contact Us Section ########## */
+/* Background color of the contact-us section and spacing from top and bottom sections */
+.contact-bg-wrapper {
+  background-color: #FFFFFF;
+  padding-bottom: 5%;
+  padding-top: 0;
+}
+
+/* Common style for the Contact Us section */
+.tooltip-inner {
+  background-color: #D4F5A0;
+  color: #0A2850;
+  border: 1px solid lightblue;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+  content: "";
+  border-top-color: lightblue;
+  border-width: 8px 8px 0;
+  margin-left: 0;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before, .tooltip.bs-tooltip-right .arrow::before {
+  content: "";
+  border-right-color: lightblue;
+  border-width: 8px 8px 8px 0;
+  margin-top: 0;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+  content: "";
+  border-bottom-color: lightblue;
+  border-width: 0 8px 8px;
+  margin-left: 0;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-left .arrow::before {
+  content: "";
+  border-left-color: lightblue;
+  border-width: 8px 0 8px 8px;
+  right: 0;
+  margin-top: 0;
+}
+
+.address-column, .contact-column {
+  padding: 0;
+}
+
+/* Styling the 't' in teczane jumbotron */
+.contact-h1-t {
+  color: #0A2850;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 180px;
+  font-weight: 400 ! important;
+  margin-bottom: 0;
+}
+
+hr{
+  margin-right: 50px;
+}
+/* Styling the 'eczane' in teczane jumbotron */
+.contact-eczane {
+  color: #DDDDDD;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 65px;
+  font-weight: 500 ! important;
+  margin-left: 5px;
+}
+
+.contact-header {
+  background-color: #0A2850;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 991px){
+  .contact-header{
+    margin-top: 5%;
+  }
+}
+
+#message {
+  min-height: 100px;
+}
+
+.send-button{
+  margin-left: 0;
+}
