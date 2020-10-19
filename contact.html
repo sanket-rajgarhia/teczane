@@ -225,9 +225,8 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <div class="g-recaptcha" data-sitekey="6LeODtkZAAAAAJQ_pGTXXTZwIcc_qxEfE_4_Jh2w" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                                            <input class="form-control d-none" data-recaptcha="true" required>
-                                            <div class="invalid-feedback">Please complete the Captcha</div>
+                                            <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
+                                            <div class="g-recaptcha" data-sitekey="6LeODtkZAAAAAJQ_pGTXXTZwIcc_qxEfE_4_Jh2w"></div>
                                         </div>
 
                                         <button type="submit" class="btn btn-success send-button">Send</button>
@@ -287,7 +286,7 @@
 
                             <ul class="nav  mx-auto flex-column">
                                 <h5 class="quick-link-text">Quick Links</h5>
-                                <li class="nav-item active">
+                                <li class="nav-item">
                                     <a class="nav-link footer-nav-link" href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
@@ -303,7 +302,7 @@
                                     <a class="nav-link footer-nav-link" href="#">Bookings</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link footer-nav-link" href="#">Contact</a>
+                                    <a class="nav-link footer-nav-link active" href="#">Contact</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link footer-nav-link" href="#">Terms</a>
@@ -338,6 +337,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
         <!-- Recaptcha Javascript -->
         <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!-- Contact Us JavaScript -->
         <script type="text/javascript" src="js/contact.js" charset="utf-8"></script>
 
     </body>

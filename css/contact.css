@@ -23,6 +23,15 @@
   width: 100vw;
 }
 
+@media screen and (orientation: landscape){
+  .header{
+    min-height: 100vh;
+  }
+  .overlay{
+    min-height: 100vh;
+  }
+}
+
 /* ########## Header Content Styling CSS ########## */
 /* Main Header Content Section */
 /* Main Header Content Section */
