@@ -46,7 +46,7 @@ orientation is landscape */
 
 /* Adjust height of header and overlay when screen size is less than 450px and
 orientation is portrait */
-@media screen and (max-width: 450px) and (orientation: portrait){
+/* @media screen and (max-width: 450px) and (orientation: portrait){
   .header {
     min-height: 100vh;
   }
@@ -54,7 +54,7 @@ orientation is portrait */
   .overlay {
     min-height: 100vh;
   }
-}
+} */
 
 /* ########## Header Content Styling CSS ########## */
 /* Main Header Content Section */
