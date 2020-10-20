@@ -20,10 +20,20 @@ let form = document.querySelector('.needs-validation');
 form.addEventListener('submit', validateForm);
 
 function validateForm(event) {
+  let returnFlag = true;
   if (form.checkValidity() === false) {
-    console.log("here");
     event.preventDefault();
     event.stopPropagation();
+    returnFlag = false;
+  }
+  else{
+    let response = grecaptcha.getResponse();
+    if(response.length == 0) {
+      event.preventDefault();
+      event.stopPropagation();
+      returnFlag = false;
+    }
   }
   form.classList.add('was-validated');
+  return returnFlag;
 }
