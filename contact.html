@@ -76,11 +76,9 @@
 
                     <!-- Header Content - Taken out of the flow with absolute positioning -->
                     <div class="animated wow fadeInLeft header-content">
-
                         <h1 class="header-h1">
                             Contact Us
                         </h1>
-
                     </div>
                     <!-- End Header Content - Taken out of the flow with absolute positioning -->
 
@@ -144,6 +142,7 @@
 
         <!-- Main -->
         <main>
+
             <!-- Contact Us Background Wrapper -->
             <div class="contact-bg-wrapper">
                 <!-- Section Wrapper -->
@@ -176,7 +175,7 @@
                                 <div class="col-lg-7 contact-column">
 
                                     <!-- Contact Us Form -->
-                                    <form id="contact-form" class="needs-validation" novalidate>
+                                    <form id="contact-form" class="needs-validation" action="" method="post" enctype="text/plain" novalidate>
 
                                         <!-- Contact Us Form Header -->
                                         <div>
@@ -187,17 +186,15 @@
                                         <!-- First Name And Last Name in same row -->
                                         <div class="form-row form-row-name">
                                             <!-- First Name Input Field -->
-                                            <div class="form-group col-md-6 row-name">
+                                            <div class="form-group col-md-6 col-first-name">
                                                 <label for="first-name">First Name</label>
                                                 <input type="text" class="form-control hastooltip" id="first-name" name="firstName" placeholder="First Name" title="Enter your first name." data-placement="top" required>
                                                 <div class="invalid-feedback">
                                                     Please provide your first name.
                                                 </div>
                                             </div>
-                                            <!--End First Name Input Field -->
-
                                             <!-- Last Name Input Field -->
-                                            <div class="form-group col-md-6 row-name">
+                                            <div class="form-group col-md-6 col-last-name">
                                                 <label for="last-name">Last Name</label>
                                                 <input type="text" class="form-control hastooltip" id="last-name" name="lastName" placeholder="Last Name" title="Enter your last name." data-placement="top" required>
                                                 <div class="invalid-feedback">
@@ -239,13 +236,16 @@
                                         </div>
                                         <!-- End Message Input Field -->
 
-                                        <!-- Recaptcha Input Field -->
+                                        <!-- Recaptcha v2 Input Field -->
                                         <div class="form-group">
-                                            <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
-                                            <div class="g-recaptcha" data-sitekey="6LeODtkZAAAAAJQ_pGTXXTZwIcc_qxEfE_4_Jh2w"></div>
-                                            
+                                            <div class="g-recaptcha" data-sitekey="6LfNYNkZAAAAAIq0XR6T9b58JoKqNm6uAHn779O_" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                            <input class="form-control d-none" data-recaptcha="true" required>
+                                            <div class="invalid-feedback">
+                                                Please validate that your are not a robot by checking the recaptcha.
+                                            </div>
+
                                         </div>
-                                        <!-- End Recaptcha Input Field -->
+                                        <!-- End Recaptcha v2 Input Field -->
 
                                         <!-- Send Button -->
                                         <button type="submit" class="btn btn-success send-button">Send</button>
@@ -265,7 +265,6 @@
                 <!-- End Section Wrapper -->
             </div>
             <!-- End Contact Us Background Wrapper -->
-
 
         </main>
         <!-- End Main -->

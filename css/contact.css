@@ -1,5 +1,6 @@
 /* ---------- Header Styles CSS ---------- */
-/* Main Header Container div CSS Styles */
+/* COMMON CSS CODE - FULL WEB PAGE */
+/* Common styling for html, body and header */
 html, body, header {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
@@ -9,6 +10,7 @@ html, body, header {
   padding: 0;
 }
 
+/* Main Header Container div CSS Styles */
 .header {
   background: url("../images/contact.jpg");
   background-attachment: scroll;
@@ -117,7 +119,7 @@ orientation is landscape */
   padding: 0;
 }
 
-/* Styling the 't' in teczane jumbotron */
+/* Styling the 't' in teczane company name heading */
 .contact-h1-t {
   color: #0A2850;
   font-family: 'Barlow Condensed', sans-serif;
@@ -126,7 +128,7 @@ orientation is landscape */
   margin-bottom: 0;
 }
 
-/* Styling the 'eczane' in teczane jumbotron */
+/* Styling the 'eczane' in teczane company name heading */
 .contact-eczane {
   color: #DDDDDD;
   font-family: 'Barlow Condensed', sans-serif;
@@ -183,7 +185,7 @@ hr {
   margin-top: 0;
 }
 
-/* Applying Style to the Contact Us form header  */
+/* Applying style to the Contact Us form header  */
 .contact-header {
   background-color: #0A2850;
   color: white;
@@ -196,30 +198,45 @@ hr {
   text-align: center;
 }
 
-/* Applying Style to the Contact Us form header for screen width less than 991px */
+/* Applying style to the Contact Us form header for screen width less than 991px */
 @media screen and (max-width: 991px) {
   .contact-header {
     margin-top: 15%;
   }
 }
 
-/* Applysing Style t the form-row to remove negative margins causing horizontal scrollling in mobile screens */
+/* Applying style to the form-row to remove negative margins causing horizontal scrollling in mobile screens */
 .form-row-name {
   margin-left: 0;
   margin-right: 0;
 }
 
-.row-name {
+/* Applying style to the first name column to create spacing */
+.col-first-name {
+  padding-left: 0 ! important;
+  padding-right: 10px ! important;
+}
+
+/* Applying style to the last name column */
+.col-last-name {
   padding-left: 0 ! important;
   padding-right: 0 ! important;
 }
 
-/* Applying Style to the message input control */
+/* Applying font style to input controls of Contact Us form */
+input, textarea {
+  font-family: "Roboto", sans-serif ! important;
+  font-weight: 300 ! important;
+}
+
+/* Applying style to the message input control */
 #message {
   min-height: 100px;
 }
 
-/* Applying Style to the Send button control */
+/* Applying style to the Send button control */
 .send-button {
   margin-left: 0;
 }
+
+/* ---------- END OF Styles CSS ---------- */
