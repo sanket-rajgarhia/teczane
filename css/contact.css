@@ -214,13 +214,13 @@ hr {
 /* Applying style to the first name column to create spacing */
 .col-first-name {
   padding-left: 0 ! important;
-  padding-right: 10px ! important;
+  padding-right: 0 ! important;
 }
 
 /* Applying style to the first name column to remove spacing for screen sizes less than 992px */
 @media screen and (max-width: 991px) {
   .col-first-name {
-    padding-right: 0px ! important;
+    padding-right: 0 ! important;
   }
 }
 
