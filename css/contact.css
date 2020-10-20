@@ -6,7 +6,6 @@ html, body, header {
   font-weight: 400;
   margin: 0;
   min-height: 70vh;
-  min-width: 100vw;
   padding: 0;
 }
 
@@ -24,10 +23,10 @@ html, body, header {
 
 /* Provides tint to the background image */
 .overlay {
-  background: rgba(92, 108, 113, 0.67);
-  background: rgba(45, 58, 62, 0.70);
-  min-height: 70vh;
+  background-color: lightgrey;
+  background-color: rgba(92, 108, 113, 0.67);
   left: 0;
+  min-height: 70vh;
   position: absolute;
   top: 0;
   width: 100vw;
@@ -44,18 +43,6 @@ orientation is landscape */
     min-height: 100vh;
   }
 }
-
-/* Adjust height of header and overlay when screen size is less than 450px and
-orientation is portrait */
-/* @media screen and (max-width: 450px) and (orientation: portrait){
-  .header {
-    min-height: 100vh;
-  }
-
-  .overlay {
-    min-height: 100vh;
-  }
-} */
 
 /* ########## Header Content Styling CSS ########## */
 /* Main Header Content Section */
@@ -152,46 +139,46 @@ hr {
   margin-right: 50px;
 }
 
-
 /* ########## Main -  Contact Us Section ########## */
 /* Contact Us - Form Column */
 /* Styling the tooltip */
 .tooltip-inner {
   background-color: #D4F5A0;
-  color: #0A2850;
   border: 1px solid lightblue;
+  color: #0A2850;
   font-size: 14px;
   opacity: 1;
 }
 
 /* Applying style to the tooltip arrow when the tool tip appears at the top of the input control */
-.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
-  content: "";
+.tooltip.bs-tooltip-top .arrow::before {
   border-top-color: lightblue;
   border-width: 8px 8px 0;
+  content: "";
   margin-left: 0;
 }
 
 /* Applying style to the tooltip arrow when the tool tip appears at the right of the input control */
-.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before, .tooltip.bs-tooltip-right .arrow::before {
-  content: "";
+.tooltip.bs-tooltip-right .arrow::before {
   border-right-color: lightblue;
   border-width: 8px 8px 8px 0;
+  content: "";
   margin-top: 0;
 }
 
 /* Applying style to the tooltip arrow when the tool tip appears at the bottom of the input control */
-.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
-  content: "";
+.tooltip.bs-tooltip-bottom .arrow::before {
   border-bottom-color: lightblue;
   border-width: 0 8px 8px;
+  content: "";
   margin-left: 0;
 }
- /* Applying style to the tooltip arrow when the tool tip appears at the left of the input control */
-.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-left .arrow::before {
-  content: "";
+
+/* Applying style to the tooltip arrow when the tool tip appears at the left of the input control */
+.tooltip.bs-tooltip-left .arrow::before {
   border-left-color: lightblue;
   border-width: 8px 0 8px 8px;
+  content: "";
   right: 0;
   margin-top: 0;
 }
@@ -214,6 +201,17 @@ hr {
   .contact-header {
     margin-top: 15%;
   }
+}
+
+/* Applysing Style t the form-row to remove negative margins causing horizontal scrollling in mobile screens */
+.form-row-name {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row-name {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Applying Style to the message input control */
