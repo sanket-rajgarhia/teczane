@@ -217,6 +217,13 @@ hr {
   padding-right: 10px ! important;
 }
 
+/* Applying style to the first name column to remove spacing for screen sizes less than 992px */
+@media screen and (max-width: 991px) {
+  .col-first-name {
+    padding-right: 0px ! important;
+  }
+}
+
 /* Applying style to the last name column */
 .col-last-name {
   padding-left: 0 ! important;
