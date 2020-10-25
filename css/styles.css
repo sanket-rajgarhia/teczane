@@ -139,7 +139,7 @@ html, body, header {
 @media screen and (max-width: 991px) {
   .nb-expanded-bg-color {
     background-color: #0A2850;
-    opacity: 0.8;
+    opacity: 0.95;
   }
 }
 
@@ -150,8 +150,33 @@ html, body, header {
   }
 }
 
+/* Applying style to the drop down menu */
+.navbar .dropdown-menu a:not(.active) {
+  color: #FFFFFF;
+}
+
+/* Applying style to the drop down menu on mouse hover*/
+.navbar .dropdown-menu a:hover {
+  background-color: #4AABF5;
+  color: #0A2850;
+}
+
+/* Applying style when menu is collapsed to hamburger button and dropdown menu is being expanded */
+@media screen and (max-width: 991px) {
+  .navbar .dropdown-menu {
+    position: static ! important;
+  }
+}
+
+/* Applying style to the drop down menu for small screens*/
+.submenu {
+  background-color: #1C5FB9;
+  opacity: 0.8;
+}
+
 /* Navbar link-item */
 nav div ul li {
+  padding-left: 10px;
   padding-right: 10px;
 }
 
