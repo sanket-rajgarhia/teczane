@@ -1,0 +1,249 @@
+/* ---------- Header Styles CSS ---------- */
+/* COMMON CSS CODE - FULL WEB PAGE */
+/* Common styling for html, body and header */
+html, body, header {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  min-height: 70vh;
+  padding: 0;
+}
+
+/* Main Header Container div CSS Styles */
+.header {
+  background: url("../images/privacy.jpg");
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  min-height: 70vh;
+}
+
+/* Provides tint to the background image */
+.overlay {
+  background-color: lightgrey;
+  background-color: rgba(92, 108, 113, 0.67);
+  left: 0;
+  min-height: 70vh;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+/* Adjust height of header and overlay when screen size is less than 768px and
+orientation is landscape */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .header {
+    min-height: 100vh;
+  }
+
+  .overlay {
+    min-height: 100vh;
+  }
+}
+
+/* ########## Header Content Styling CSS ########## */
+/* Main Header Content Section */
+.header-content {
+  left: 2.5%;
+  position: absolute;
+  top: 50%;
+  width: 55%;
+}
+
+/* Styling Header h1 Contact Us - in the Header Content Section */
+.header-h1 {
+  color: #0A2850;
+  color: #FFFFFF;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* Apply style to header content and header-h1 when screen size if less than 992px */
+@media screen and (max-width: 991px) {
+  .header-content {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 95%;
+  }
+
+  .header-h1 {
+    bottom: 5px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Applying style to the breadcrumb container */
+.breadcrum-container {
+  padding: 0;
+}
+
+/* Applying stlye to the main inner breadcrumb div */
+.breadcrumb {
+  background-color: #0A2850;
+  border-radius: 0;
+  color: #FFFFFF;
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+/* Styling the Breadcrumb separator image */
+.breadcrumb-img {
+  display: inline-block;
+  height: auto;
+  padding: 5px;
+  width: 25px;
+}
+
+/* ########## Main -  Contact Us Section ########## */
+/* Background color of the contact-us section and spacing from top and bottom sections */
+.contact-bg-wrapper {
+  background-color: #FFFFFF;
+  padding-bottom: 5%;
+  padding-top: 0;
+}
+
+/* ########## Main -  Contact Us Section ########## */
+/* Common style for the Address Column */
+.address-column, .contact-column {
+  padding: 0;
+}
+
+/* Styling the 't' in teczane company name heading */
+.contact-h1-t {
+  color: #0A2850;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 180px;
+  font-weight: 400 ! important;
+  margin-bottom: 0;
+}
+
+/* Styling the 'eczane' in teczane company name heading */
+.contact-eczane {
+  color: #DDDDDD;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 65px;
+  font-weight: 500 ! important;
+  margin-left: 5px;
+}
+
+hr {
+  margin-right: 50px;
+}
+
+/* ########## Main -  Contact Us Section ########## */
+/* Contact Us - Form Column */
+/* Styling the tooltip */
+.tooltip-inner {
+  background-color: #D4F5A0;
+  border: 1px solid lightblue;
+  color: #0A2850;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* Applying style to the tooltip arrow when the tool tip appears at the top of the input control */
+.tooltip.bs-tooltip-top .arrow::before {
+  border-top-color: lightblue;
+  border-width: 8px 8px 0;
+  content: "";
+  margin-left: 0;
+}
+
+/* Applying style to the tooltip arrow when the tool tip appears at the right of the input control */
+.tooltip.bs-tooltip-right .arrow::before {
+  border-right-color: lightblue;
+  border-width: 8px 8px 8px 0;
+  content: "";
+  margin-top: 0;
+}
+
+/* Applying style to the tooltip arrow when the tool tip appears at the bottom of the input control */
+.tooltip.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: lightblue;
+  border-width: 0 8px 8px;
+  content: "";
+  margin-left: 0;
+}
+
+/* Applying style to the tooltip arrow when the tool tip appears at the left of the input control */
+.tooltip.bs-tooltip-left .arrow::before {
+  border-left-color: lightblue;
+  border-width: 8px 0 8px 8px;
+  content: "";
+  right: 0;
+  margin-top: 0;
+}
+
+/* Applying style to the Contact Us form header  */
+.contact-header {
+  background-color: #0A2850;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  margin-bottom: 5%;
+  margin-top: 10%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* Applying style to the Contact Us form header for screen width less than 991px */
+@media screen and (max-width: 991px) {
+  .contact-header {
+    margin-top: 15%;
+  }
+}
+
+/* Applying style to the form-row to remove negative margins causing horizontal scrollling in mobile screens */
+.form-row-name {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Applying style to the first name column to create spacing */
+.col-first-name {
+  padding-left: 0 ! important;
+  padding-right: 10px ! important;
+}
+
+/* Applying style to the first name column to remove spacing for screen sizes less than 992px */
+@media screen and (max-width: 991px) {
+  .col-first-name {
+    padding-right: 0 ! important;
+  }
+}
+
+/* Applying style to the last name column */
+.col-last-name {
+  padding-left: 0 ! important;
+  padding-right: 0 ! important;
+}
+
+/* Applying font style to input controls of Contact Us form */
+input, textarea {
+  font-family: "Roboto", sans-serif ! important;
+  font-weight: 300 ! important;
+}
+
+/* Applying style to the message input control */
+#message {
+  min-height: 100px;
+}
+
+/* Applying style to the Send button control */
+.send-button {
+  margin-left: 0;
+}
+
+/* ---------- END OF Styles CSS ---------- */

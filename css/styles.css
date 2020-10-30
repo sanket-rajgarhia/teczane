@@ -168,7 +168,7 @@ html, body, header {
   }
 }
 
-/* Applying style to the drop down menu for small screens*/
+/* Applying style to the drop down menu for small screens in the top navbar */
 .submenu {
   background-color: #1C5FB9;
   opacity: 0.8;
@@ -647,6 +647,21 @@ for screen sizes below 992px */
   font-weight: 400;
   padding: 0;
   text-align: left;
+}
+
+/* Stying the dropdown menu link in the footer */
+#dropdown-terms {
+  text-align: left;
+  padding: 0;
+}
+
+/* Styling the drop down in the footer nav */
+.dropdown-menu-footer {
+  position: static ! important;
+  transform: none ! important;
+  background-color: inherit;
+  color: inherit;
+  padding: 5px;
 }
 
 /* Styling the copyright info */
