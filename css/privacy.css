@@ -105,145 +105,87 @@ orientation is landscape */
   width: 25px;
 }
 
-/* ########## Main -  Contact Us Section ########## */
-/* Background color of the contact-us section and spacing from top and bottom sections */
-.contact-bg-wrapper {
+/* ########## Main -  Privacy Section ########## */
+/* Background color of the privacy section and spacing from top and bottom sections */
+.privacy-bg-wrapper {
   background-color: #FFFFFF;
   padding-bottom: 5%;
   padding-top: 0;
 }
 
-/* ########## Main -  Contact Us Section ########## */
-/* Common style for the Address Column */
-.address-column, .contact-column {
-  padding: 0;
-}
-
-/* Styling the 't' in teczane company name heading */
-.contact-h1-t {
-  color: #0A2850;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 180px;
-  font-weight: 400 ! important;
-  margin-bottom: 0;
-}
-
-/* Styling the 'eczane' in teczane company name heading */
-.contact-eczane {
-  color: #DDDDDD;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 65px;
-  font-weight: 500 ! important;
-  margin-left: 5px;
-}
-
-hr {
-  margin-right: 50px;
-}
-
-/* ########## Main -  Contact Us Section ########## */
-/* Contact Us - Form Column */
-/* Styling the tooltip */
-.tooltip-inner {
-  background-color: #D4F5A0;
-  border: 1px solid lightblue;
-  color: #0A2850;
-  font-size: 14px;
-  opacity: 1;
-}
-
-/* Applying style to the tooltip arrow when the tool tip appears at the top of the input control */
-.tooltip.bs-tooltip-top .arrow::before {
-  border-top-color: lightblue;
-  border-width: 8px 8px 0;
-  content: "";
-  margin-left: 0;
-}
-
-/* Applying style to the tooltip arrow when the tool tip appears at the right of the input control */
-.tooltip.bs-tooltip-right .arrow::before {
-  border-right-color: lightblue;
-  border-width: 8px 8px 8px 0;
-  content: "";
-  margin-top: 0;
-}
-
-/* Applying style to the tooltip arrow when the tool tip appears at the bottom of the input control */
-.tooltip.bs-tooltip-bottom .arrow::before {
-  border-bottom-color: lightblue;
-  border-width: 0 8px 8px;
-  content: "";
-  margin-left: 0;
-}
-
-/* Applying style to the tooltip arrow when the tool tip appears at the left of the input control */
-.tooltip.bs-tooltip-left .arrow::before {
-  border-left-color: lightblue;
-  border-width: 8px 0 8px 8px;
-  content: "";
-  right: 0;
-  margin-top: 0;
-}
-
-/* Applying style to the Contact Us form header  */
-.contact-header {
-  background-color: #0A2850;
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+/* ########## Main -  Privacy Section ########## */
+/* Styling the privacy section */
+#privacy {
   margin-bottom: 5%;
-  margin-top: 10%;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  margin-top: 5%;
+}
+
+/* Common styling for the posted and effective dates */
+.dates {
+  padding-left: 20px;
+}
+
+/* Spacing the accordian from the dates */
+.effective-date {
+  margin-bottom: 5%;
+}
+
+/* Spacing the card stacks */
+.privacy-card {
+  margin-bottom: 5%;
+}
+
+/* Styling the the card header button */
+.btn-link {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px;
+  text-decoration: none ! important;
+  text-transform: none;
+  width: 100%;
+}
+
+/* Styling the card header - expanded state button */
+.btn-link:after {
+  background-color: #0043B1;
+  border-radius: 100%;
+  color: #FFFFFF;
+  content: '\02212';
+  font-size: 23px;
+  font-weight: 200;
+  height: 35px;
+  position: absolute;
+  right: 15px;
   text-align: center;
+  top: 11px;
+  width: 35px;
 }
 
-/* Applying style to the Contact Us form header for screen width less than 991px */
-@media screen and (max-width: 991px) {
-  .contact-header {
-    margin-top: 15%;
-  }
+/* Styling the card header - collapsed state button */
+.btn-link.collapsed:after {
+  content: '\002B';
 }
 
-/* Applying style to the form-row to remove negative margins causing horizontal scrollling in mobile screens */
-.form-row-name {
-  margin-left: 0;
-  margin-right: 0;
+/* Styling the card body */
+.privacy-card-body {
+  font-size: 0.8rem;
+  font-weight: 200;
 }
 
-/* Applying style to the first name column to create spacing */
-.col-first-name {
-  padding-left: 0 ! important;
-  padding-right: 10px ! important;
+/* Styling subheadings in the card-body text */
+.sub-heading {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
-/* Applying style to the first name column to remove spacing for screen sizes less than 992px */
-@media screen and (max-width: 991px) {
-  .col-first-name {
-    padding-right: 0 ! important;
-  }
+/* Styling the padding of lists inside the card-body */
+.top-ol {
+  padding-left: 20px;
 }
 
-/* Applying style to the last name column */
-.col-last-name {
-  padding-left: 0 ! important;
-  padding-right: 0 ! important;
-}
-
-/* Applying font style to input controls of Contact Us form */
-input, textarea {
-  font-family: "Roboto", sans-serif ! important;
-  font-weight: 300 ! important;
-}
-
-/* Applying style to the message input control */
-#message {
-  min-height: 100px;
-}
-
-/* Applying style to the Send button control */
-.send-button {
-  margin-left: 0;
+/* Styling the padding of nested lists inside the card-body */
+.sub-ol {
+  padding-left: 10px;
 }
 
 /* ---------- END OF Styles CSS ---------- */
